@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    --Background:hsl(233, 47%, 7%);
+    --Card-BG:hsl(244, 38%, 16%);
+    --Accent:hsl(277, 64%, 61%);
+    --Main-heading:  hsl(0, 0%, 100%);
+    --Main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --Stats-Heading:hsla(0, 0%, 100%, 0.6);
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    font-size: 15px;
+    background-color: var(--Background);
+    color: var(--Main-heading);
+}
+.card{
+    width: 1110px;
+    height: 446px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 150px 185px;
+    background-color: var(--Card-BG);
+    border-radius: 8px;
+}
+.heading{
+    margin-top: 71px;
+    margin-left: 71px;
+    margin-right: 95px;
+    color:var(--Main-heading);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+span{
+    color: var(--Accent);
+}
+.copy{
+    color: var(--Main-paragraph);
+    margin-left: 71px;
+    margin-right: 125px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 352px;
+    height: 56px;
+    margin-left: 71px;
+}
+.stat{
+    color: var(--Main-heading);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0;
+}
+.grid-item p{
+    color: var(--Stats-Heading);
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    /* identical to box height, or 208% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.card-right img{
+    width: 552.5px;
+    height:446px;
+    border-radius: 0 8px 8px 0;
+    /* background-image: url(/images/image-header-desktop.jpg); */
+    background-color: var(--Accent);
+    opacity: .8;
+}
+.attribution{ 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
